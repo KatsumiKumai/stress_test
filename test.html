@@ -1,0 +1,49 @@
+<html>
+	<head>
+	<title>課題：テスト</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+
+<body>
+
+	<div id="top">
+		<div class="text-content">
+			<h1>文字入力課題：テスト</h1>
+
+			<h3><strong style="color:red;">あなたの番</strong>となった時に表示されたアルファベットを入力欄に入力して送信してください。(Enterキーでも送信可)<br/>テスト課題は１分間行います。アルファベットは5秒ごとに変化します。順番は何回か回ってくることがあります。<br/>スタートする前に入力モードが半角英数字であることを確認してください。</h3>
+		</div>
+	</div>
+
+	<div id="main">
+		<div id="contents">
+			<div style="text-align: center;">
+	      		<p><span id = 'alphabet' style="font-size:4em; ">ここにアルファベットが表示されます。</span></p>
+			</div>
+		</div>
+
+		<div id="mojiokoshi">
+			<p><input type="button" value="スタート" id="start" class="btn" onclick="start();"/></p>
+			<p><span id = 'count' style="font-size:4em; "></span></p>
+
+			<form>
+				<p>
+					入力<br/>
+					<textarea id="userInput" name="uesrInput" rows="4" cols="40"></textarea>
+				</p>
+				<input type="hidden" id="result" name="result" value="" />
+
+				<input type="button" id="end" name="end" class="btn" onclick="enter_data();" value="送信"/>
+				<p>
+					<input type="button" id ="submit" class="btn" onclick="return check();" value="終了" />
+				</p>
+			</form>	
+		</div>
+	</div>
+
+	<script src="http://crowd4u.org/js/jquery-1.11.1.min.js"></script>
+	<script src="http://www.u.tsukuba.ac.jp/~s1620622/stress_test/js/mojiokoshi.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="http://www.u.tsukuba.ac.jp/~s1620622/stress_test/css/mojiokoshi.css" type="text/css" />
+
+</body>
+
+</html>

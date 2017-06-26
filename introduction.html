@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  	<title>タスク説明画面</title>
+    <link rel="stylesheet" href="http://www.u.tsukuba.ac.jp/~s1620622/stress_test/css/introduction.css" type="text/css" />
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+
+  <div class="contents">
+    <h1>実験の説明</h1>
+    <h2>1、タスク内容</h2>
+    <p>スタートを押してタスクを始めます</p>
+    <p><img src="./img/task_start.png" alt="task_start"  width="70%"></p>
+    </br>
+
+    <p>3秒ごとに5文字のアルファベットが次々表示されます。この表示されたアルファベットを決められたタイミングで入力することがタスクです。カウンターに従って入力してください。</p>
+    <p><img src="./img/task2.png" alt="task2"  width="70%" ></p>
+    </br>
+    
+    <p><strong style="color: red;">「あと0回」</strong>となった時に、表示されているアルファベットを入力します。複数回、あなたの番が回ってくることがあります。また、ある条件下では、カウンターが不規則な変化をすることもあります。</p>
+    <p><img src="./img/task_end.png" alt="task_end"  width="60%"></p>
+    </br>
+    
+    <h2>２、実験手順</h2>
+    	<h3>テストタスク(1分)</h3>
+    		<p>はじめに上記のタスクを1分間行います。</p>
+
+  	  <h3>評価１：一対比較(3分)</h3>
+  	  	<p>今回の実験では、NASA-TLXという主観評価の手法でタスクの負荷・負担の大きさを評価します。テストタスクの経験を基にして、表示される二つの項目のうち、作業の負荷・負担に関わりが深いと思われる項目を選択します。</p>
+        <p><img src="./img/nasa-tlx-pair.png" alt="nasa-tlx-pair"  width="80%" height="80%"></p>
+
+  	  <h3>本番タスク(3分×5条件)</h3>
+  	   <p>５つの条件下でタスクを行います。タスクは3分間行います。各タスク終了後に、それぞれの条件下での作業負担を評価してください。</p>
+
+      <h3>評価２：負担度評価(1分×5条件)</h3>
+        <p>各タスク終了後に6つの評価項目に対して、0から100までの値で評価を行います。</p>
+        <p><img src="./img/nasa-tlx-check.png" alt="nasa-tlx-check"  width="100%" ></p>
+
+    <input class="next" id="next" type="button" value="次へ" onClick="next();">
+  </div>
+
+
+    <script>
+      function next(){
+          window.location.href = "http://www.u.tsukuba.ac.jp/~s1620622/stress_test/test.html"
+      }
+    </script>
+
+  </body>
+</html>

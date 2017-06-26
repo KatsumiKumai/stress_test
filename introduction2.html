@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  	<title>タスク説明画面</title>
+    <script src="http://crowd4u.org/js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="http://www.u.tsukuba.ac.jp/~s1620622/stress_test/css/introduction.css" type="text/css" />
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body>
+
+  <div class="contents">
+    <h1>タスクの説明</h1>
+
+    <h2>タスクの概要</h2>
+    <p>タスクは「課題を行うこと」と「その課題の負荷・負担の評価を行うこと」です。</p>
+    <p>課題として、５秒ごとに表示される５文字のアルファベットを決められたタイミングで入力するというものを用意しました。タイミングは画面右手に表示されるカウンターによって知らされます。具体的には、<strong style="color: red;">「あなたの番」</strong>となった時に、表示されているアルファベットを入力します。課題は合計６回行います。</p>
+    <p>課題の負荷・負担の評価は６つの評価項目について評価します。それぞれの項目をよく理解し、評価してください。</p>
+
+    <h2>タスク進行手順</h2>
+    <p>スライドでタスクの一連の流れを説明します。ひと通り読んでからタスクを始めてください</p>
+
+    </div>
+
+    <div class="slide-wrapper">
+      <div class="change-btn-wrapper">
+        <div class="change-btn prev-btn">← 前へ</div>
+        <div class="change-btn next-btn">次へ →</div>
+      </div>
+      <ul class="slides">
+        <li class="slide active"><img src="./img/start1.png"></li>
+        <li class="slide"><img src="./img/start2.png"></li>
+        <li class="slide"><img src="./img/start3.png"></li>
+        <li class="slide"><img src="./img/define.png"></li>
+        <li class="slide"><img src="./img/tlx1.png"></li>
+        <li class="slide"><img src="./img/pro.png"></li>
+        <li class="slide"><img src="./img/tlx2.png"></li>
+        <li class="slide"><img src="./img/end.png"></li>
+      </ul>
+    </div>
+
+    <input class="next" id="next" type="button" value="タスクを始める" onClick="next();">
+  
+
+
+    <script type="text/javascript" src="./js/introduction.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/*========================
+全体
+==========================*/
+
+* {
+  margin:0; padding:0;
+  line-height:1.5;
+  color:#000000;
+}
+
+body {
+    background-color:#ffffff;
+    text-align:center;
+}
+
+.contents {
+  width:800px; margin:0 auto;           /*内容全体をセンタリング*/
+  text-align:left;                /*テキストの配置を左揃えにする*/
+  background-color:#ffffff;           /*内容全体の背景色*/
+}
+
+.next{
+  width: auto;
+  height: 1cm;
+  font: Bold 14px Arial, Helvetica, sans-serif;
+  display: none;
+}
+
+
+h1 {
+  padding:20px 0px 0px 30px;          /*見出し内容の位置調整*/
+  font-family:Arial, Helvetica, sans-serif; /*フォントの種類*/
+  margin-bottom: 5px;
+}
+
+h2{
+  font-family:Arial, Helvetica, sans-serif; /*フォントの種類*/
+  padding-left: 3px;
+  margin-top: 25px;
+  border-left:solid #00ff00;
+  border-bottom:solid #00ff00;
+  color:#000000;
+  margin-bottom: 5px;
+}
+
+p{
+  margin-bottom: 5px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+.slide-wrapper {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  color: #5e6f84;
+  padding: 60px 0;
+}
+
+.slide-title {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.change-btn-wrapper {
+  width: 500px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.change-btn-wrapper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.prev-btn {
+  cursor: pointer;
+  float: left;
+  display: none;
+}
+
+.next-btn {
+  cursor: pointer;
+  float: right;
+}
+
+.slides {
+  padding: 0;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.slide img {
+  width: 700px;
+  height: auto;
+  border-radius: 5px;
+}
